@@ -1,3 +1,57 @@
+# # function = block of reusable code
+# # place () after function name to invoke it, call = invoke
+# def happy_birthday(name, age): # name = parameter, temporary variable
+#     print(f"Happy birthday to {name}!")
+#     print(f"You are {age} years old!")
+#     print("Happy birthday to you!")
+#     print()
+
+# happy_birthday("Bro", 21) # "Bro" = argument, input for parameter
+# # every argument needs corresponding parameter, order of arguments and parameters must match
+
+# def display_invoice(username, amount, due_date):
+#     print(f"Hello {username}.")
+#     print(f"Your bill of ${amount:.2f} is due: {due_date}.") # :.2f allows two placeholders for digits after decimals
+
+# display_invoice("Brocode", 42.50, "01/01")
+
+# # return = statment used to end function and send result back to caller
+
+# def add(x,y):
+#     z = x + y
+#     return z
+
+# def subtract(x,y):
+#     z = x - y
+#     return z
+
+# def multiply(x,y):
+#     z = x * y
+#     return z
+
+# def divide(x,y):
+#     z = x / y
+#     return z 
+
+# # still have to invoke function to activate
+# print(add(1,2)) 
+# print(subtract(1,2))
+# print(multiply(1,2))
+# print(divide(1,2))
+
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
+
+full_name = create_name("spongebob", "squarepants")
+print(full_name)
+
+
+
+
+
+
 # Methods, Help & Documentation Practice #1
 # Remove the characters to the left of our main text:
 
