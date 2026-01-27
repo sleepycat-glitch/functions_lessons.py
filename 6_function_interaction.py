@@ -16,6 +16,21 @@
 # "The sum of your dice is {sum_dice}. It looks like a winning roll"
 
 # Hint: use the random library's choice or randint method to choose a random value between 1 and 6.
+import random 
+def throw_dice(a, b):
+    a = random.random(1,6)
+    b = random.random(1,6)
+    return a and b
+
+def roll_result(a, b):
+    sum = a + b
+    if sum <= 6:
+        print(f"The sum of your dice is {sum}. Unfortunate.")
+    elif sum > 6 and sum < 10:
+        print(f"The sum of your dice is {sum}. You have a good chance.")
+    else:
+        print(f"The sum of your dice is {sum}. It looks like a winning roll.")
+
 
 
 
@@ -25,6 +40,11 @@
 # For example, if given the list [1,2,15,7,2] it should return [1,2,7].
 
 # Create a function called average() that can receive as an argument the list returned by the previous function, and that calculates the average of its values. It should return the result (a float), without printing it.
+
+num = [ 2, 54, 23, 9, 17, 23, 4, 11, 54]
+def reduce_list(num):
+    num = dict(num)
+    
 
 # \
 # Interactions Between Functions Practice #3

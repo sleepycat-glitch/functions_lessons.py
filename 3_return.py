@@ -8,10 +8,6 @@ def power(a,b):
 print(power(3,5))
 
 
-
-
-
-
 # Return Practice #2
 # Create a function called usd_to_eur that takes a numeric value (an amount in US dollars) as its only parameter, and returns the equivalent amount in euros as a result. For the purposes of this example, we will take the conversion 1 USD = 0.90 EUR.
 
@@ -22,8 +18,8 @@ print(power(3,5))
 dollars = 284.38
 
 def usd_to_eur(dollars):
-    eur = dollars * 0.9
-    return eur
+    pounds = dollars * 0.9
+    return pounds
 
 print(usd_to_eur(dollars))
 
