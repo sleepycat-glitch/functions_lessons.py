@@ -35,11 +35,9 @@ def list_attributes(**kwargs):
 # eye_color: brown
 # hair_color: black
 
-
-
 def describe_person(name, **kwargs):
     print(f"Characteristcs of {name}:")
     for key,value in kwargs.items():
         print(key, ":", value)
-        
+
 describe_person("Ash", eye_color = "brown", hair_color = "black")
