@@ -59,5 +59,20 @@ def reduce_list(num):
 # If the coin comes up "Heads", it should print to the screen: "List was saved" and return the list intact.
 
 # Hint: Use the random library's choice method to choose an element at random from a sequence.
+import random
+secret_codes = [2,5,1,7]
+def toss_coin():
+    a = random.random("Tails","Heads")
+    return a
 
+toss_coin()
+
+def luck(a, secret_codes):
+    if a == "Tails":
+        print("List will self-destruct.")
+        secret_codes = [ ]
+        return secret_codes
+    else:
+        print("List was saved.")
+        return secret_codes
 
