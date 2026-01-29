@@ -61,5 +61,3 @@ def reduce_list(num):
 # Hint: Use the random library's choice method to choose an element at random from a sequence.
 
 
-
-
